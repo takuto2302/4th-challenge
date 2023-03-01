@@ -11,7 +11,7 @@ public class Main {
         player.put("爆豪", "4秒13");
         player.put("緑谷", "7秒02");
 
-        System.out.println("50m走順位結果");
+        System.out.println("500m走順位結果");
         player.entrySet().stream().sorted(java.util.Map.Entry.comparingByValue()).forEach(System.out::println);
 
     }
