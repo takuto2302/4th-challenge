@@ -12,7 +12,11 @@ public class Main {
         player.put("緑谷", "7秒02");
 
         System.out.println("500m走順位結果");
-        player.entrySet().stream().sorted(java.util.Map.Entry.comparingByValue()).forEach(System.out::println);
+
+        player.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue())
+                .forEach(p -> System.out.println(p.getKey() + "：" + p.getValue()));
 
     }
 }
